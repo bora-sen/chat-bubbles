@@ -1,4 +1,5 @@
 {
+  "homepage": "https://bora-sen.github.io",
   "name": "chat-bubbles",
   "private": true,
   "version": "0.2.0",
@@ -6,10 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^9.0.7",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
